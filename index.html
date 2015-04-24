@@ -1,64 +1,53 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Cropper</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-        <link rel="stylesheet" href="./CSS/cropper.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cropper.js by Rtg147</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cropper.js</h1>
+      <h2 class="project-tagline">A simple bootstrap modal cropper</h2>
+      <a href="https://github.com/Rtg147/cropper.js" class="btn">View on GitHub</a>
+      <a href="https://github.com/Rtg147/cropper.js/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Rtg147/cropper.js/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <section class="main-content">
+      <h3>
+<a id="what-is-cropperjs" class="anchor" href="#what-is-cropperjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is cropper.js</h3>
 
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-        <!-- Mobile support -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<p>Cropper.js is a nice and simple bootstrap modal  image cropper.</p>
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    </head>
-    <body>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Crop
-        </button>
+<h3>
+<a id="how-to-use-" class="anchor" href="#how-to-use-" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use ?</h3>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div  class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Positionnez et redimmensionnez</h4>
-                    </div>
-                    <div class="modal-body" role="document">
-                        
-                        <div class="center-block" id="crop"></div>
-                        <div id="dragImg" class="center-block">
-                            <img id="img" height="320"  src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg" alt="PictureToCrop">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <span style="left:-490px;font-size: 20pt" class="glyphicon glyphicon-zoom-out"></span><span style="left:-50px;font-size: 20pt" class="glyphicon glyphicon-zoom-in"></span> <div class="center" id="slider"></div>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button id="btnCrop" type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <canvas width="320" height="320"  id="canvasCrop">
-                             Your browser does not support the HTML5 canvas tag.
-                        </canvas>
-        <script src="./crop.js"></script>
-        <script src="./observer.js"></script>
-    </body>
+<p>Just add the index.html content into your wanted page and use the cropTobase64() function .This will retrive you a base64 data that you could send by POST and convert to binary easyli.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Tiago Soares - CFPTI</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p><a href="mailto:tiago.soares.cfpti@gmail.com">tiago.soares.cfpti@gmail.com</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Rtg147/cropper.js">Cropper.js</a> is maintained by <a href="https://github.com/Rtg147">Rtg147</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
 </html>
+
