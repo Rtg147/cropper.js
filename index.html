@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cropper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="./CSS/cropper.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- Mobile support -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    </head>
+    <body>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Crop
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div  class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Positionnez et redimmensionnez</h4>
+                    </div>
+                    <div class="modal-body" role="document">
+                        
+                        <div class="center-block" id="crop"></div>
+                        <div id="dragImg" class="center-block">
+                            <img id="img" height="320"  src="http://www.focusmarketing.it/newsite/wp-content/uploads/2012/09/young-people-survey-940x300-940x300.jpg" alt="PictureToCrop">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span style="left:-490px;font-size: 20pt" class="glyphicon glyphicon-zoom-out"></span><span style="left:-50px;font-size: 20pt" class="glyphicon glyphicon-zoom-in"></span> <div class="center" id="slider"></div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button id="btnCrop" type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <canvas width="320" height="320"  id="canvasCrop">
+                             Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+        <script src="./crop.js"></script>
+        <script src="./observer.js"></script>
+    </body>
+</html>
